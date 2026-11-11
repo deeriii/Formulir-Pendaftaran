@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 20px;
+}
+
+h1, h2 {
+    color: #0b4369;
+    text-align: center;
+}
+
+.main-header p {
+    text-align: center;
+}
+
+
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+}
+
+legend {
+    float: left;
+    width: 100%;
+    padding: 0 0 5px 0;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #0b4369;
+    border-bottom: 2px solid #0b4369;
+    font-size: 1.1rem;
+}
+
+fieldset::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input[type="text"], 
+input[type="email"], 
+input[type="date"], 
+select, 
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.radio-group {
+    display: flex;
+    gap: 20px;
+    margin-top: 8px;
+}
+
+.radio-group label {
+    font-weight: normal;
+    margin-top: 0;
+    cursor: pointer;
+}
+
+.container {
+    max-width: 700px;
+    margin: auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.btn {
+    padding: 10px 15px;
+    background-color: #0b4369;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.btn-reset {
+    background-color: #0b4369;
+}
+
+
+.table-detail {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.table-detail th, 
+.table-detail td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.table-detail th {
+    background-color: #0b4369; 
+    color: white;
+}
+
+
+#nama:focus, #nim:focus {
+    background-color: #f0f7ff;
+    outline: none;
+}

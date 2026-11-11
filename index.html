@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran Mahasiswa Baru</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <h1>Formulir Pendaftaran Mahasiswa Baru</h1>
+        <p>Silakan isi formulir di bawah ini dengan data yang benar.</p>
+    </header>
+
+    <main class="container">
+        <form action="detail.html" method="get" class="form-card">
+            
+            <fieldset>
+                <legend>Data Pribadi</legend>
+                
+                <div class="form-group">
+                    <label for="nama">Nama Lengkap:</label>
+                    <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="nim">NIM:</label>
+                    <input type="text" id="nim" name="nim" placeholder="Contoh: 124140001" pattern="[0-9]{9}" title="Masukkan 9 digit NIM" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Alamat Email:</label>
+                    <input type="email" id="email" name="email" placeholder="contoh@student.itera.ac.id" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Jenis Kelamin:</label>
+                    <div class="radio-group">
+                        <input type="radio" id="male" name="gender" value="Laki-laki" checked>
+                        <label for="male">Laki-laki</label>
+                        <input type="radio" id="female" name="gender" value="Perempuan">
+                        <label for="female">Perempuan</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="prodi">Program Studi:</label>
+                    <select id="prodi" name="prodi" required>
+                        <option value="">Pilih Program Studi</option>
+                        <optgroup label="Fakultas Teknologi Industri">
+                            <option value="Teknik Informatika">Teknik Informatika</option>
+                            <option value="Teknik Elektro">Teknik Elektro</option>
+                        </optgroup>
+                        <optgroup label="Fakultas Sains">
+                            <option value="Matematika">Matematika</option>
+                            <option value="Fisika">Fisika</option>
+                        </optgroup>
+                        <optgroup label="Fakultas Teknologi Infrastruktur dan Kewilayahan">
+                            <option value="Matematika">Arsitektur</option>
+                            <option value="Fisika">Teknik Sipil</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="tgl_lahir">Tanggal Lahir:</label>
+                    <input type="date" id="tgl_lahir" name="tgl_lahir" required>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Informasi Tambahan</legend>
+                
+                <div class="form-group">
+                    <label for="alamat">Alamat Domisili:</label>
+                    <textarea id="alamat" name="alamat" rows="3" placeholder="Masukkan alamat lengkap"></textarea>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="persetujuan" name="persetujuan" value="setuju" required>
+                    <label for="persetujuan">Saya menyatakan data yang diisi adalah benar.</label>
+                </div>
+            </fieldset>
+
+            <div class="form-actions">
+                <button type="submit" class="btn btn-submit">Kirim Pendaftaran</button>
+                <button type="reset" class="btn btn-reset">Reset Form</button>
+            </div>
+
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Tugas PAW - ITERA - Ribka Deuina Manik (124140014)</p>
+    </footer>
+
+</body>
+</html>
